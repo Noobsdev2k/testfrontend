@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+.wrapper {
+  height: 100vh;
+}
+.sidebar {
+  width: 150px;
+  background: #000;
+  color: #fff;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.sidebar nav ul li {
+  list-style: none;
+  width: 100%;
+  border-bottom: 1px solid #5c5c5c;
+}
+
+.sidebar nav ul li a {
+  color: #aaa;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.sidebar nav ul li a:hover {
+  color: #fff;
+  background: #5c5c5c;
+}
+
+.main {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: calc(100% - 150px);
+  margin-left: auto;
+}
+.content {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.heading {
+  text-align: center;
+  background-color: #efefef;
+  padding: 38px 270px;
+  margin-bottom: 40px;
+}
+.heading h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  margin-bottom: 16px;
+  color: #000000;
+}
+.heading span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  font-style: normal;
+}
+.d-flex {
+  display: flex;
+}
+.muti-box {
+  justify-content: space-between;
+  margin-left: -50px;
+}
+.box {
+  margin-left: 50px;
+  width: calc(100% - 50px);
+}
+.box-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 18px;
+  color: #000000;
+}
+.box-content {
+}
+.box-img {
+  float: left;
+  shape-outside: url(./assets/img/css-icon.png);
+  shape-margin: 30px;
+  margin-right: 16px;
+}
+.box-content span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #000000;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 130px;
+  border-top: 1px solid #dedede;
+}
+
+.active {
+  color: #fff !important;
+}
